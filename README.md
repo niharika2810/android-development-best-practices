@@ -1,6 +1,6 @@
 Title: Android Development | Best Practices
 
-                     ![Best Practices](/images/best_practice.jpeg)
+![Best Practices](/images/best_practice.jpeg)
 
 ## Introduction
 
