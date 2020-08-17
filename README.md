@@ -31,7 +31,7 @@ Supporting multiple resolutions are a sometimes nightmare to developers. Includi
 4) Learn how to use [Build types](https://www.journaldev.com/21533/android-build-types-product-flavors), [Product Flavors](https://levelup.gitconnected.com/simple-guide-to-android-product-flavors-674106455038#:~:text=Simply%20put%2C%20a%20product%20flavor,app%20using%20a%20single%20codebase.) and [Build Variants](https://developer.android.com/studio/build/build-variants) and make most out of it for faster and easier development.<br/><br/>
 ####  Build Type
    Decides how our code will be compiled. For instance, If we want to sign our .apk with debug key, we put our debug configuration into debug build type. If we want to have obfuscated code when it is compiled and ready to release, we put that configuration on our release build type. If we want to log our HTTP request in debug mode but we want to disable it on release mode, we put that configuration on build types or call build types in library dependencies.
-<br/>
+
 ```
 buildTypes
 {
@@ -50,8 +50,9 @@ When you run your app in debug mode, your application package name will be packa
 
 ### Product Flavor<br/>
 Let’s say we have are developing your app for your customer users. Everything is going fine for customer app. Then your product owner said that you need to develop that app for admin users. Admin user app should have all functionalities that customer app has. But also admin user can have access to statistics page and admin user should see the app in different colours and resources. And also your admin app’s analytics should not be mixed with customer app.What will you do? The answer is Product Flavor. Same app, different behaviour.
-<br/>Edit your Gradle file:
-<br/>
+
+Edit your Gradle file:
+
 ```
 android
  {
@@ -82,7 +83,6 @@ ADB provides you with more details than your Android Studio Logcat. Just try it 
 6) Configure your gradle.properties to increase your build speed.<br/><br/>
 Long build times have always been a problem in the developer’s life.
 
-<br/>
 ```
 org.gradle.daemon=true
 org.gradle.parallel=true
@@ -150,7 +150,7 @@ If multiple apps can respond to the intent and the user might want to use a diff
 15) Put all your sensitive information in <b>gradle.properties</b> and never push it to your version control system.<br/><br/>
 Don’t do this. This would appear in the version control system.
 
-<br/>
+
 ```
 signingConfigs
  {
@@ -165,14 +165,14 @@ signingConfigs
 ```
 
 Instead, make a gradle.properties file :
-<br/>
+
 ```
 KEYSTORE_PASSWORD=password123
 KEY_PASSWORD=password789
 ```
 
 That file is automatically imported by Gradle, so you can use it in build.gradle as such:
-<br/>
+
 ```
 signingConfigs
 {
@@ -247,7 +247,7 @@ If you don’t know what “unencrypted communications” means, think of it thi
 #### The Critics principle<br/>
 When you’re reviewing code of your teammates don’t be a friend, Be their arch enemy, don’t let them make mistakes that you might have to clean someday. Cleaning other’s shit will only make your hand dirty. Enforce good practices in code reviews.
 
-Please feel free to contribute to add more. I will be happy to learn and share :-)
+Please feel free to contribute by raising a [PR](https://github.com/niharika2810/android-development-best-practices/compare) to add more. I will be happy to learn and share :-)
 
 You can check the article [here](https://proandroiddev.com/android-development-best-practices-7278e9cdbbe9) which is originally published here on my [personal website](https://niharika2810.github.io/2020/07/23/android-development-best-practices.html).
 
