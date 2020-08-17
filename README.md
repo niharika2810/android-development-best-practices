@@ -252,3 +252,6 @@ If you don’t know what “unencrypted communications” means, think of it thi
 When you’re reviewing code of your teammates don’t be a friend, Be their arch enemy, don’t let them make mistakes that you might have to clean someday. Cleaning other’s shit will only make your hand dirty. Enforce good practices in code reviews.
 
 Please feel free to contribute to add more. I will be happy to learn and share :-)
+
+You can check the article [here](https://proandroiddev.com/android-development-best-practices-7278e9cdbbe9) which is originally published here on my [personal website](https://niharika2810.github.io/2020/07/23/android-development-best-practices.html).
+
