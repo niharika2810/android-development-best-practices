@@ -1,10 +1,6 @@
-# android-development-best-practices
+Title: Android Development | Best Practices
 
----
-layout: post
-title: Android Development | Best Practices
----
-![Best Practices](/images/best_practice.jpeg)
+                     ![Best Practices](/images/best_practice.jpeg)
 
 ## Introduction
 
