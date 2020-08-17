@@ -1,4 +1,4 @@
-Title: Android Development | Best Practices
+## Title: Android Development | Best Practices
 
 ![Best Practices](/images/best_practice.jpeg)
 
