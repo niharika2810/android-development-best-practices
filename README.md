@@ -225,10 +225,10 @@ reCAPTCHA is a free service that uses an advanced risk analysis engine to protec
 
 22) Write [Unit tests](https://developer.android.com/training/testing/unit-testing) for your feature.<br/><br/>
 Listing out some benefits:<br/>
-1) Unit tests help to fix bugs early in the development cycle and save costs.<br/>
-2) It helps the developers to understand the code base and enables them to make changes quickly<br/>
-3) Good unit tests serve as project documentation.<br/>
-4) You become more confident about the stuff you are writing.<br/>
+* Unit tests help to fix bugs early in the development cycle and save costs.<br/>
+* It helps the developers to understand the code base and enables them to make changes quickly<br/>
+* Good unit tests serve as project documentation.<br/>
+* You become more confident about the stuff you are writing.<br/>
 There are many more [benefits](https://www.seguetech.com/the-benefits-of-unit-testing/).:-)
 
 23) Make <b>security decisions</b> on the server-side whenever possible.<br/><br/>
