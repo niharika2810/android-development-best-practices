@@ -261,5 +261,5 @@ When you’re reviewing code of your teammates don’t be a friend, Be their arc
 
 Please feel free to contribute by raising a [PR](https://github.com/niharika2810/android-development-best-practices/compare) to add more. I will be happy to learn and share :-)
 
-You can check the article [here](https://proandroiddev.com/android-development-best-practices-7278e9cdbbe9) which is originally published here on my [personal website](https://niharika2810.github.io/2020/07/23/android-development-best-practices.html).
+You can check the article [here](https://proandroiddev.com/android-development-best-practices-7278e9cdbbe9) which is originally published here on my [personal website](https://thedroidlady.com/2020-07-23-android-development-best-practices).
 
