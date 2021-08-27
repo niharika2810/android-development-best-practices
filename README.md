@@ -255,6 +255,7 @@ Split your app module into different small modules, and give those modules as de
 
 <br/>Read more [here](https://medium.com/swlh/modularization-by-feature-and-layer-with-android-architecture-components-80bf317d737).
 
+28) Avoid using too many Base classes. Using base classes everywhere makes a tight web in your codebase, which later makes it hard to do changes in the code. If still necessary, create and use a standalone function (kotline file).
 
 #### The Critics principle<br/>
 When you’re reviewing code of your teammates don’t be a friend, Be their arch enemy, don’t let them make mistakes that you might have to clean someday. Cleaning other’s shit will only make your hand dirty. Enforce good practices in code reviews.
