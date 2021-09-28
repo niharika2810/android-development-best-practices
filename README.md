@@ -255,9 +255,9 @@ Split your app module into different small modules, and give those modules as de
 
 <br/>Read more [here](https://medium.com/swlh/modularization-by-feature-and-layer-with-android-architecture-components-80bf317d737).
 
-28) Avoid using too many Base classes. Using base classes everywhere makes a tight web in your codebase, which later makes it hard to do changes in the code. If still necessary, create and use a standalone function (kotline file). 
+28) Avoid using too many base classes. Using base class everywhere creates a tight web in your code, which later makes it hard to refactor things. If still it's a necessity, create and use a standalone function (kotline file). 
 Lets understand this with an example : 
-You have 2 fragments namely ProfileFragment and HomeFragment, which extends from BaseFragment. BaseFragment has a function fetchPosts() in onCreate().Now if in future you decide ProfileFragment should not fetch posts when the fragment is created, rather the fragment first shows a dialogBox if the user is not loggedIn. If the codebase is hugh, you may have hardtime refactoring it. The other way around is to create a kotlin file as fun fetchPosts() then use this function in your fragments in onCreate() or in a buttonClickListener depending on your use case. Also one must note that a class can extend only one abstract parent class.
+You have 2 fragments namely ProfileFragment and HomeFragment, which extends from BaseFragment. BaseFragment has a function fetchPosts() in the onCreate() method, Now if in future you decide that ProfileFragment should not fetch posts when it is created, rather it should first show a dialogBox if the user is not logged-in. If the codebase is huge, you may have hardtime refactoring it. The other way around is to create a kotlin file as fun fetchPosts() and then use this function in your fragments in the onCreate() method or in a swipeRefresh() method (depending on your use case). Also one must note that a class can extend only one abstract base class.
 <br/-> Read more [here](https://codeburst.io/inheritance-is-evil-stop-using-it-6c4f1caf5117), [here](https://dev.to/antonholmberg/the-baseclass-anti-pattern-16il), [here](https://proandroiddev.com/say-no-to-baseactivity-and-basefragment-83b156ed8998).
        
 
