@@ -260,6 +260,24 @@ Lets understand this with an example :
 You have 2 fragments namely ProfileFragment and HomeFragment, which extends from BaseFragment. BaseFragment has a function fetchPosts() in the onCreate() method, Now if in future you decide that ProfileFragment should not fetch posts when it is created, rather it should first show a dialogBox if the user is not logged-in. If the codebase is huge, you may have hardtime refactoring it. The other way around is to create a kotlin file as fun fetchPosts() and then use this function in your fragments in the onCreate() method or in a swipeRefresh() method (depending on your use case). Also one must note that a class can extend only one abstract base class.
 <br/-> Read more [here](https://codeburst.io/inheritance-is-evil-stop-using-it-6c4f1caf5117), [here](https://dev.to/antonholmberg/the-baseclass-anti-pattern-16il), [here](https://proandroiddev.com/say-no-to-baseactivity-and-basefragment-83b156ed8998).
        
+29) Create sourceSets for your main layout folder as follows
+
+```
+sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/layouts',
+                    file('src/main/res/layouts').listFiles()
+            ]
+        }
+    }
+```
+
+Now you can separate out activity layouts, fragment layout and custom layouts in their respective folder as shown
+![Build Variants](/images/layout_structure.png)
+
+This will make navigating for layout files a lot easier and keep resources segregated.
 
 #### The Critics principle<br/>
 When you’re reviewing code of your teammates don’t be a friend, Be their arch enemy, don’t let them make mistakes that you might have to clean someday. Cleaning other’s shit will only make your hand dirty. Enforce good practices in code reviews.
