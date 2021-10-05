@@ -275,6 +275,7 @@ sourceSets {
 ```
 
 Now you can separate out activity layouts, fragment layout and custom layouts in their respective folder as shown
+
 ![Build Variants](/images/layout_structure.png)
 
 This will make navigating for layout files a lot easier and keep resources segregated.
