@@ -259,6 +259,8 @@ Split your app module into different small modules, and give those modules as de
 Lets understand this with an example : 
 You have 2 fragments namely ProfileFragment and HomeFragment, which extends from BaseFragment. BaseFragment has a function fetchPosts() in the onCreate() method, Now if in future you decide that ProfileFragment should not fetch posts when it is created, rather it should first show a dialogBox if the user is not logged-in. If the codebase is huge, you may have hardtime refactoring it. The other way around is to create a kotlin file as fun fetchPosts() and then use this function in your fragments in the onCreate() method or in a swipeRefresh() method (depending on your use case). Also one must note that a class can extend only one abstract base class.
 <br/-> Read more [here](https://codeburst.io/inheritance-is-evil-stop-using-it-6c4f1caf5117), [here](https://dev.to/antonholmberg/the-baseclass-anti-pattern-16il), [here](https://proandroiddev.com/say-no-to-baseactivity-and-basefragment-83b156ed8998).
+
+29) If you are using FirebaseFireStore in your application then don't directly write 'true' on the read and write rules to decrease security issues as it can help hackers to penetrate through your application.
        
 
 #### The Critics principle<br/>
