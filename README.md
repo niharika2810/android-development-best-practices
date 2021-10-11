@@ -290,7 +290,7 @@ This will allow only logged users to write over db. For more about writing rules
 
 Read more [here](https://codeburst.io/inheritance-is-evil-stop-using-it-6c4f1caf5117) and [here](https://dev.to/antonholmberg/the-baseclass-anti-pattern-16il).
        
-29) Create sourceSets for your main layout folder by adding following snippet in app level build.gradle file as follows
+30) Create sourceSets for your main layout folder by adding following snippet in app level build.gradle file as follows
 
 ```
 android {
